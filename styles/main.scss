@@ -1,62 +1,40 @@
 @import "./components/reset";
+@import "./components/button";
+@import "./components/cards";
 
 
 body {
-    background-color: #2a8ada;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+    height: 100vh;
     color: #fff;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
 
 .main{
-    
     display: flex;
     justify-content:center;
     align-items: center;
     flex-direction:column;
+    h1{
+        padding-top: 1em;
+    }
 }
 .genre-column {
+    
     display:flex;
     flex-direction:column;
     text-align:center;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 #game{
     
     display: flex;
 }
-.card {
-    width: 200px;
-    height: 120px;
-    border-radius:20px;
-    background-color: coral;
-    text-align:center;
-    padding: 5px;
-    margin: 10px;
-    border: 5px solid whitesmoke;
-    font-size: 100px;
-
-}
-
-.correct-answer{
-    background-color:greenyellow;
-}
-.wrong-answer{
-    background-color:crimson;
-}
-
-.true-button{
-    background-color:greenyellow;
-}
-.false-button{
-    background-color:crimson;
-}
 
 
-button{
-    margin: 5px;
-    padding: 10px 20px;
-    border-radius: 10%;
-}
 
 // .display-none{
 //     display: none;
