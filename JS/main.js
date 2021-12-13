@@ -6,7 +6,7 @@ startGameBtn.addEventListener("click", function () {
       let app = await import("./game.js");
       console.log("startgame");
 
-      startGameBtn.classList.add('display-none')
+      startGameBtn.classList.add("display-none");
     } catch (error) {
       console.log(error);
     }
