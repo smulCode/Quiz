@@ -1,52 +1,47 @@
-
-
 .card {
-    width: 200px;
-    min-height: 130px;
-    border-radius:10px;
+  width: 200px;
+  min-height: 130px;
+  border-radius: 10px;
 
-    text-align:center;
-    padding: 5px;
-    margin: 5px;
-    font-size: 100px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  font-size: 100px;
 
-    color: rgba(255, 255, 255, 0.9);
-    text-decoration: none;
-    font-weight: bold;
-    // text-shadow: 1px 1px 0 #ffffff;
-    
-    border: 1px solid orange;
-    
-    
-    &:hover {
-        cursor: pointer;
-        box-shadow:
-      2px 2px 0.5em rgba(122, 98, 0, 0.55),
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-weight: bold;
+  // text-shadow: 1px 1px 0 #ffffff;
+
+  border: 1px solid orange;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 0.5em rgba(122, 98, 0, 0.55),
       inset 1px 1px 0 rgba(255, 255, 255, 0.9),
-      inset -1px -1px 0 rgba(0, 0, 0, 0.34)
-    ;
+      inset -1px -1px 0 rgba(0, 0, 0, 0.34);
 
-        &::before {
-          opacity: 0.5;
-        }
-      }
-  
-      &::before {
-        display: block;
-        position: absolute;
-        inset: 30px 10px 0;
-        z-index: -1;
-        box-shadow: 0 0 40px 0 orange;
-        opacity: 0.2;
-        border-radius: 10px 10px 30px 30px;
-        transition: opacity 250ms linear;
-        content: '';
-      }
+    &::before {
+      opacity: 0.5;
+    }
+  }
+
+  &::before {
+    display: block;
+    position: absolute;
+    inset: 30px 10px 0;
+    z-index: -1;
+    box-shadow: 0 0 40px 0 orange;
+    opacity: 0.2;
+    border-radius: 10px 10px 30px 30px;
+    transition: opacity 250ms linear;
+    content: "";
+  }
 }
 
-.correct-answer{
-    background-color:greenyellow;
+.correct-answer {
+  background-color: greenyellow;
 }
-.wrong-answer{
-    background-color:crimson;
+.wrong-answer {
+  background-color: crimson;
 }

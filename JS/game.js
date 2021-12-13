@@ -1,10 +1,8 @@
-
 const game = document.getElementById("game");
 const scoreDisplay = document.getElementById("score");
 let score = 0;
 
-
- const genres = [
+const genres = [
   {
     name: "Books",
     id: 10,
@@ -70,14 +68,14 @@ genres.forEach((genre) => addGenre(genre));
 
 function flipCard() {
   this.innerHTML = "";
-  this.style.fontSize = "15px"
+  this.style.fontSize = "15px";
   const textDisplay = document.createElement("div");
   const trueButton = document.createElement("button");
   const falseButton = document.createElement("button");
   trueButton.innerHTML = "True";
   falseButton.innerHTML = "False";
-  trueButton.classList.add("true-button")
-  falseButton.classList.add("false-button")
+  trueButton.classList.add("true-button");
+  falseButton.classList.add("false-button");
   trueButton.addEventListener("click", getResult);
   falseButton.addEventListener("click", getResult);
   textDisplay.innerHTML = this.getAttribute("data-question");
@@ -113,5 +111,3 @@ function getResult() {
   }
   cardOfButton.removeEventListener("click", flipCard);
 }
-
-
